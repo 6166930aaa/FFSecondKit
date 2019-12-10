@@ -1,0 +1,27 @@
+{
+  "name": "FFSecondKit",
+  "version": "0.1.0",
+  "summary": "A short description of FFSecondKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/6166930aaa/FFSecondKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "6166930aaa": "quxin19880707@126.com"
+  },
+  "source": {
+    "git": "https://github.com/6166930aaa/FFSecondKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FFSecondKit/Classes/**/*",
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  }
+}

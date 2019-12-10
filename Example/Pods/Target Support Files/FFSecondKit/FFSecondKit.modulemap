@@ -1,0 +1,6 @@
+framework module FFSecondKit {
+  umbrella header "FFSecondKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

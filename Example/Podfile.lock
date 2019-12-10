@@ -1,0 +1,23 @@
+PODS:
+  - CTMediator (25)
+  - FFSecondKit (0.1.0):
+    - CTMediator
+
+DEPENDENCIES:
+  - FFSecondKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CTMediator
+
+EXTERNAL SOURCES:
+  FFSecondKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  FFSecondKit: 347ddde15657739f35338c4332e024a4fda55fb8
+
+PODFILE CHECKSUM: d303327c3652785e3ec33f8aaa36ed0a9d3997b5
+
+COCOAPODS: 1.8.4

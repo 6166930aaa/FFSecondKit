@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		008D5D76A404C49D32FBCB17 /* Pods-FFSecondKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFSecondKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-FFSecondKit_Tests/Pods-FFSecondKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		06752F930A27833DBB2CE356 /* Pods_FFSecondKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFSecondKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		413E80FBDA0ABE7AE31C8F8E /* FFSecondKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FFSecondKit.podspec; path = ../FFSecondKit.podspec; sourceTree = "<group>"; };
+		413E80FBDA0ABE7AE31C8F8E /* FFSecondKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FFSecondKit.podspec; path = ../FFSecondKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4F32231780D8A53493B8DD74 /* Pods-FFSecondKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFSecondKit_Example.release.xcconfig"; path = "Target Support Files/Pods-FFSecondKit_Example/Pods-FFSecondKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FFSecondKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFSecondKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B785095674C45A208A056866 /* Pods-FFSecondKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFSecondKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-FFSecondKit_Example/Pods-FFSecondKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D102E7A02FC356C369983E75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EB29C09CD3B3471936D88513 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D102E7A02FC356C369983E75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EB29C09CD3B3471936D88513 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EEFB1D77253E458743E46C81 /* Pods-FFSecondKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFSecondKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FFSecondKit_Tests/Pods-FFSecondKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE7DF7FEAE84538B45E82F47 /* Pods_FFSecondKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFSecondKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				EEFB1D77253E458743E46C81 /* Pods-FFSecondKit_Tests.debug.xcconfig */,
 				008D5D76A404C49D32FBCB17 /* Pods-FFSecondKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FFSecondKit_Example/Pods-FFSecondKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/FFSecondKit/FFSecondKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFSecondKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

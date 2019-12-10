@@ -1,0 +1,6 @@
+framework module Pods_FFSecondKit_Example {
+  umbrella header "Pods-FFSecondKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
